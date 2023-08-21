@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bai+Jamjuree:wght@300&family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Itim&family=Lilita+One&family=Luckiest+Guy&family=Mulish:wght@400;600;700&family=Roboto&family=Satisfy&family=Signika&family=Special+Elite&family=Syne:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+   <textarea name="" id="result" cols="32" rows="3" placeholder="0" readonly></textarea>
+   <div class="btns">
+    <table>
+        
+        <tr>
+            <td><button onclick="display('7')">7</button></td>
+            <td><button onclick="display('8')">8</button></td>
+            <td><button onclick="display('9')">9</button></td>
+            <td><button onclick="display('*')" class="math">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="display('4')">4</button></td>
+            <td><button onclick="display('5')">5</button></td>
+            <td><button onclick="display('6')">6</button></td>
+            <td><button onclick="display('-')" class="math">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="display('1')">1</button></td>
+            <td><button onclick="display('2')">2</button></td>
+            <td><button onclick="display('3')">3</button></td>
+            <td><button onclick="display('+')" class="math">+</button></td>
+        </tr>
+       <tr>
+            <td><button onclick="display('0')">0</button></td>
+            <td><button onclick="display('/')">/</button></td>
+            <td><button onclick="allclear()">C</button></td>
+            <td><button onclick="expreval()" class="math">=</button></td>
+       </tr>
+       <tr>
+        <td><button onclick="removelast()" class="math">DEL</button></td>
+       </tr>
+    </table>
+   </div>
+   </div> 
+</body>
+<script src="main.js"></script>
+</html>
